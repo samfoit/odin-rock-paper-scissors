@@ -40,4 +40,13 @@ function playRound(playerSelection,computerSelection){
     else if (pChoice == "scissors" && compChoice == "paper"){
         return "You Win! Scissors beats Paper!";
     }
+    else {
+        return "ERROR! WRONG INPUT!";
+    }
+}
+
+function game(){
+    for (let i = 0; i < 5; i++){
+        console.log(playRound(prompt("Please enter Rock, Paper, or Scissors"),computerPlay()));
+    }
 }
