@@ -4,7 +4,7 @@ function computerPlay(){
 }
 
 function playRound(playerSelection,computerSelection){
-    let pChoice = playerSelection.toUnderCase();
+    let pChoice = playerSelection.toLowerCase();
     let compChoice;
 
     switch(computerSelection){
