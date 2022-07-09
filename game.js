@@ -15,12 +15,9 @@ function computerPlay(){
 
 function playRound(playerSelection){
     let computerSelection = computerPlay();
-    
-    console.log(`Player chose ${playerSelection}`);
-    console.log(`Comp chose ${computerSelection}`);
 
     if (playerSelection == computerSelection){
-        console.log('It was a tie!');
+        return;
     }
     else if (computerSelection == playerSelection + 1 || computerSelection == playerSelection - 2){
         score(false);
